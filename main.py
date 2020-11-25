@@ -14,6 +14,6 @@ tip_percentage = percentage_float + 1
 people_int = int(people)
 
 
-tip_result = (bill_float / people_int) * tip_percentage
+tip_result = round((bill_float / people_int) * tip_percentage)
 
 print(f"Each person should pay: ${tip_result}")
